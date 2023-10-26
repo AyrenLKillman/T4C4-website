@@ -1,4 +1,2 @@
 background-image: radial-gradient(circle, #e6e9ec, #bdbec1, #959597, #6e6e6f, #4a4a4a);                find a way to add opacity to this so you can see image behind this
 
-background-image: linear-gradient(to right, #877956, #a49571, #c1b28e, #e0d0ab, #ffefca); THIS GOES RIGHT --->
-background-image: linear-gradient(to left, #877956, #a49571, #c1b28e, #e0d0ab, #ffefca);  THIS GOES LEFT <---
