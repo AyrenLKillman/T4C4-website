@@ -22,14 +22,7 @@ body > header {
 }
 
 
-body > header > img {
-	display: block;
-	width: 28%;
-}
-section#listspec{
-	float:right;
-	
-}
+
 
 nav#mainLinks ul li {
 	background-color: rgb(138, 59, 7);	
@@ -54,12 +47,21 @@ nav#mainLinks a:hover, nav#mainLinks a:active {
 	background-color: rgb(143, 69, 0);
 }
 
+body > header > img {
+	display: block;
+	width: 28%;
+}
 
 article > header > img {	
 	display: block;
 	width: 100%;
 }
 
+section#listspec{
+	float:right;
+	padding-right: 20em;
+	padding-top: 4.3em;
+}
 
 /*for the Footer*/
 nav#bottomlinks ul li {
@@ -86,3 +88,13 @@ nav#bottomlinks a:link, nav#bottomlinks a:visited {
 nav#bottomlinks a:hover, nav#bottomlinks a:active {
 	background-color: rgb(143, 69, 0);
 }
+
+
+
+
+
+
+
+
+/*if your reading this, the header and footer buttons do work, though the page it
+goes to is ugly */
