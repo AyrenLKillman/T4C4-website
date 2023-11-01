@@ -1,13 +1,14 @@
 @charset "utf-8";
 
-/*background-image causes the background to be paper due to it being connected to a PNG file that looks like paper*/
+/*this is the background of the whole page, i did do a cheap move by downloading a white background image since the linear-gradent kept effecting the
+area it shouldn't of been touching*/
 html {
-   background-image:url(../pictures/br_paper.png);
+   background-image:url(../pictures/white-background.png);
    color: rgb(255, 255, 255);
    font-size: 12px;
 
 }
-
+/*this is the body, this is the area that is colored with a gradent */
 body {
 	background-image: linear-gradient(to left, #877956, #e0d0ab, #ffefca);
    font-family: Verdana, Geneva, sans-serif; 	
@@ -17,13 +18,12 @@ body {
    box-shadow:  rgb(71, 71, 71) -10px -10px 25px,
    				rgb(71,71,71) 10px 10px 25px;
 }
+/*This is the header with the company logo*/
 body > header {
-	background-color:rgb(202, 140, 98);
+	background-color:rgb(206, 206, 206);
 }
 
-
-
-
+/*this is the part with the links, they do work but it brings you to a template of a website*/
 nav#mainLinks ul li {
 	background-color: rgb(138, 59, 7);	
 	display: block;
@@ -46,6 +46,12 @@ nav#mainLinks a:link, nav#mainLinks a:visited {
 nav#mainLinks a:hover, nav#mainLinks a:active {
 	background-color: rgb(143, 69, 0);
 }
+/*heres the end of the header links*/
+
+
+
+
+
 
 body > header > img {
 	display: block;
@@ -57,13 +63,27 @@ article > header > img {
 	width: 100%;
 }
 
+
 section#listspec{
 	float:right;
 	padding-right: 20em;
 	padding-top: 4.3em;
+	color:rgb(71, 71, 71);
 }
 
-/*for the Footer*/
+/* this code (seciton#housedesc) was kinda a pain to make, it makes the description of the text in the correct area */
+section#housedesc{
+	position:absolute;
+	padding-left: 34em;
+	padding-right: 10em;
+	padding-top: 3em;
+	color:rgb(71, 71, 71);
+}
+
+
+
+
+/*This is the footer links stuff, same as the top, but instead its on the footer, you can see the similarities*/
 nav#bottomlinks ul li {
 	background-color: rgb(122, 58, 16);	
 	display: block;
@@ -84,17 +104,7 @@ nav#bottomlinks ul li a {
 nav#bottomlinks a:link, nav#bottomlinks a:visited {
 	color: rgb(255, 255, 255);
 }
-/*same code that makes the link change color, but its for the footer*/
+
 nav#bottomlinks a:hover, nav#bottomlinks a:active {
 	background-color: rgb(143, 69, 0);
 }
-
-
-
-
-
-
-
-
-/*if your reading this, the header and footer buttons do work, though the page it
-goes to is ugly */
