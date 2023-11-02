@@ -1,0 +1,7 @@
+background image: tentically the white is a background image, as if it isnt there, the background would be the linear gradient
+page element: at the bottom, i have images that have a border & are curved
+box shadow: on the edge of the body & under the images at the bottom
+radial gradient: on top where the company logo is
+Linear gradeint: body color
+transform: images on bottom rotated
+filter: image on the bottom has a higher brightness and saturated more

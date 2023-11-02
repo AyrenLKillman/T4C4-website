@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
 <!--
     New Perspectives on HTML5 and CSS3, 7th Edition
     Tutorial 4
@@ -18,8 +17,8 @@
     <link href="./css/br_styles.css" rel="stylesheet" />
     <body>
         <header>
-           <img src="./pictures/br_logo.png" alt="companylogo" />
-           <nav class="horizontal" id="mainLinks">
+           <img src="./pictures/br_logo.png" alt="companylogo" class="companylogo" />
+           <nav class="mainLinks">
               <ul>
                  <li><a href="./Pages/residential.html">Residential</a></li>
                  <li><a href="./Pages/business.html">Business</a></li>
@@ -33,10 +32,10 @@
       
         <article>
            <header>
-               <img src="./pictures/hero_image.png" alt="heroimage" />	 
+               <img src="./pictures/hero_image.png" alt="heroimage" class="hero" />	 
            </header>
-           <!--these are the section/id pieces, for a reminder they can be used to seperate info so you can modify only one of them in CSS at a time-->
-           <section id="listspec">
+           <!--these are the section/class pieces, for a reminder they can be used to seperate info so you can modify only one of them in CSS at a time-->
+           <section class="listspec">
             <ul>
                <li><p>Address:</p></li>
                <li><p>Listing 2048</p></li>
@@ -48,7 +47,7 @@
                <li><p>Baths: 2-1/2</p></li>
             </ul>    
          </section> 
-            <img src="./pictures/br_photo5.png" alt="livingroom" />              
+            <img src="./pictures/br_photo5.png" alt="livingroom" class="kitchen" />              
 
             <section id="housedesc">
             <p>Paradise found! This custom-built brand new home sits proudly on a 6.8-acre
@@ -62,12 +61,12 @@
                a beautiful wooded area.</p>      
          </section>
 
-               <img src="./pictures/br_photo7.png" alt="bedroom1"/>
+               <img src="./pictures/br_photo7.png" alt="bedroom1" class="bedroom1"/>
         
 <!--this is the area for transformed items-->
 
-
-
+         <img src="./pictures/br_photo4.png" alt="diningroom" class="dining"/>
+         <img src="./pictures/br_photo6.png" alt="livingroom" class="living"/>
 
                
          </article>   

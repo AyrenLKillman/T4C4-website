@@ -1,2 +1,0 @@
-background-image: radial-gradient(circle, #e6e9ec, #bdbec1, #959597, #6e6e6f, #4a4a4a);                find a way to add opacity to this so you can see image behind this
-

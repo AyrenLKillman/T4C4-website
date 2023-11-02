@@ -19,12 +19,16 @@ body {
    				rgb(71,71,71) 10px 10px 25px;
 }
 /*This is the header with the company logo*/
-body > header {
-	background-color:rgb(206, 206, 206);
+body > header{
+	background: radial-gradient(white, rgb(117, 117, 117), rgb(34, 34, 34));
 }
-
+body > header > img{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
 /*this is the part with the links, they do work but it brings you to a template of a website*/
-nav#mainLinks ul li {
+nav.mainLinks ul li {
 	background-color: rgb(138, 59, 7);	
 	display: block;
 	float: left;
@@ -32,26 +36,21 @@ nav#mainLinks ul li {
 	width: 20%;	
 }
 
-nav#mainLinks ul li a {
+nav.mainLinks ul li a {
 	display: block;
 	height: 2.5em;	
 	text-align: center;
 	line-height: 2.5em;	
 }
 
-nav#mainLinks a:link, nav#mainLinks a:visited {
+nav.mainLinks a:link, nav.mainLinks a:visited {
 	color: rgb(255, 255, 255);
 }
 /*the code below this makes it where when you hover your mouse over the box/link, it will change color*/
-nav#mainLinks a:hover, nav#mainLinks a:active {
+nav.mainLinks a:hover, nav.mainLinks a:active {
 	background-color: rgb(143, 69, 0);
 }
 /*heres the end of the header links*/
-
-
-
-
-
 
 body > header > img {
 	display: block;
@@ -63,33 +62,75 @@ article > header > img {
 	width: 100%;
 }
 
-
-section#listspec{
+/*here are the area where the words on the page are at*/
+section.listspec{
 	float:right;
 	padding-right: 20em;
 	padding-top: 4.3em;
 	color:rgb(71, 71, 71);
+	text-shadow: 1px 4px 5px rgba(37, 37, 37, 0.8);
+	
 }
 
-/* this code (seciton#housedesc) was kinda a pain to make, it makes the description of the text in the correct area */
+
 section#housedesc{
 	position:absolute;
-	padding-left: 34em;
-	padding-right: 10em;
-	padding-top: 3em;
+	padding-left: 5em;
+	padding-right: 40em;
+	padding-top: 5em;
 	color:rgb(71, 71, 71);
+	text-shadow: 1px 4px 5px rgba(37, 37, 37, 0.8);
+}
+/*this is for the bedroom pic, the kitchen pic didnt need to be touched, it is fine as is*/
+article> img.bedroom1{
+	position: relative;
+	padding-left: 55em;
+	
+}
+
+/*transforming stuff, yes a lot of this is confusing due to the sheer ammount of code required to make them work*/
+
+article> img.dining{
+	border-radius: 25px;
+	background: url(../pictures/white-background.png);
+	background-position: left top;
+	background-repeat: repeat;
+	padding: 5px;
+	width: auto;
+	height: auto;
+	filter:brightness(190%) saturate(200%);
+	transform:rotate(3deg) translatex(10em) translateY(3.5em);
+	box-shadow: 1px 10px 5px rgba(37, 37, 37, 0.8);
 }
 
 
+
+article> img.living{
+	border-radius: 25px;
+	background: url(../pictures/white-background.png);
+	background-position: left top;
+	background-repeat: repeat;
+	padding: 5px;
+	width: auto;
+	height: auto;
+	transform:rotate(-3deg) translatex(15em) translateY(5em);
+	box-shadow: 1px 10px 5px rgba(37, 37, 37, 0.8);
+}
 
 
 /*This is the footer links stuff, same as the top, but instead its on the footer, you can see the similarities*/
+
+footer{
+	padding-top: 10em;
+}
+
 nav#bottomlinks ul li {
 	background-color: rgb(122, 58, 16);	
 	display: block;
 	float: left;
 	text-align: center;
 	width: 25%;	
+	
 }
 
 nav#bottomlinks ul li a {
