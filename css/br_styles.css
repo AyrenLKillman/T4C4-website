@@ -54,13 +54,23 @@ nav.mainLinks a:hover, nav.mainLinks a:active {
 
 body > header > img {
 	display: block;
-	width: 28%;
+	width: 32%;
 }
 
 article > header > img {	
 	display: block;
-	width: 100%;
+	max-width:100%;
+	position: relative;
+	padding-left: 55em;
+	border-radius: 25px;
+	background: url(../pictures/white-background.png);
+	background-position: left top;
+	background-repeat: repeat;
+	padding: 5px;
+	width: auto;
+	height: auto;
 }
+
 
 /*here are the area where the words on the page are at*/
 section.listspec{
@@ -77,16 +87,42 @@ section#housedesc{
 	position:absolute;
 	padding-left: 5em;
 	padding-right: 40em;
+	max-width:90em;
 	padding-top: 5em;
 	color:rgb(71, 71, 71);
 	text-shadow: 1px 4px 5px rgba(37, 37, 37, 0.8);
 }
-/*this is for the bedroom pic, the kitchen pic didnt need to be touched, it is fine as is*/
+/*images beside words*/
 article> img.bedroom1{
 	position: relative;
+	/*here*/
 	padding-left: 55em;
-	
+	border-radius: 25px;
+	background: url(../pictures/white-background.png);
+	background-position: left top;
+	background-repeat: repeat;
+	padding: 5px;
+	width: auto;
+	height: auto;
+	/*to here is all for the white border*/
+	transform: translatex(53em);
+	/*this transform is only here just to move the image with the border*/
 }
+article> img.kitchen{
+	position: relative;
+	padding-left: 55em;
+	border-radius: 25px;
+	background: url(../pictures/white-background.png);
+	background-position: left top;
+	background-repeat: repeat;
+	padding: 5px;
+	width: auto;
+	height: auto;
+	transform: translatex(1em) translateY(1em);
+}
+
+
+
 
 /*transforming stuff, yes a lot of this is confusing due to the sheer ammount of code required to make them work*/
 
@@ -99,11 +135,9 @@ article> img.dining{
 	width: auto;
 	height: auto;
 	filter:brightness(190%) saturate(200%);
-	transform:rotate(3deg) translatex(10em) translateY(3.5em);
+	transform:rotate(3deg) translatex(-14em) translateY(25.5em);
 	box-shadow: 1px 10px 5px rgba(37, 37, 37, 0.8);
 }
-
-
 
 article> img.living{
 	border-radius: 25px;
@@ -113,7 +147,7 @@ article> img.living{
 	padding: 5px;
 	width: auto;
 	height: auto;
-	transform:rotate(-3deg) translatex(15em) translateY(5em);
+	transform:rotate(-3deg) translatex(-13em) translateY(24em);
 	box-shadow: 1px 10px 5px rgba(37, 37, 37, 0.8);
 }
 
@@ -121,7 +155,7 @@ article> img.living{
 /*This is the footer links stuff, same as the top, but instead its on the footer, you can see the similarities*/
 
 footer{
-	padding-top: 10em;
+	padding-top: 40em;
 }
 
 nav#bottomlinks ul li {
